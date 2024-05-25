@@ -1,0 +1,79 @@
+﻿@model GRNCars.Entities.Service
+
+@{
+    ViewData["Title"] = "Servis Kaydı Düzenle";
+}
+
+<h1>Servis Kaydı Düzenle</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ArrivalDate" class="control-label"></label>
+                <input asp-for="ArrivalDate" class="form-control" />
+                <span asp-validation-for="ArrivalDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VehicleProblem" class="control-label"></label>
+                <input asp-for="VehicleProblem" class="form-control" />
+                <span asp-validation-for="VehicleProblem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServicePrice" class="control-label"></label>
+                <input asp-for="ServicePrice" class="form-control" />
+                <span asp-validation-for="ServicePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transactions" class="control-label"></label>
+                <input asp-for="Transactions" class="form-control" />
+                <span asp-validation-for="Transactions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberPlate" class="control-label"></label>
+                <input asp-for="NumberPlate" class="form-control" />
+                <span asp-validation-for="NumberPlate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CaseType" class="control-label"></label>
+                <input asp-for="CaseType" class="form-control" />
+                <span asp-validation-for="CaseType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChassisNumber" class="control-label"></label>
+                <input asp-for="ChassisNumber" class="form-control" />
+                <span asp-validation-for="ChassisNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notes" class="control-label"></label>
+                <input asp-for="Notes" class="form-control" />
+                <span asp-validation-for="Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
